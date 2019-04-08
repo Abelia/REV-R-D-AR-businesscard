@@ -33,6 +33,8 @@ AFRAME.registerComponent('markerhandler', {
                 const nextItem = employees[nextItemId];
                 nextItem.classList.add('visible');
                 nextItem.setAttribute('visible', true);
+            
+                console.log("hi");
             });
         }
 });
