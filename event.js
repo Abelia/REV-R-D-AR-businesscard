@@ -6,7 +6,7 @@ AFRAME.registerComponent('markerhandler', {
         const employees = document.querySelectorAll(".employee");
 
         // every click, we make we change the visible model
-        document.addEventListener('touch click', function(ev, target){
+        document.addEventListener('touchstart', function(ev, target){
             
                 // KNOWN ISSUE on AFRAME/AR.js -> events get fired 2 times if clicked on animated-marker, so we have to check if clicked element is canvas to only handle these events.
                 if (!ev.target.classList.contains('a-canvas')) return;
