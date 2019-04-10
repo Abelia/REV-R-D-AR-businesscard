@@ -1,19 +1,5 @@
 AFRAME.registerComponent('markerhandler', {
 
-    const vr = document.style.visibility = "hidden"
-
-    var finger = document.querySelector("#tap");
-    const container = document.querySelector("#container");
-
-    function blink(ob) {
-        if (finger.style.visibility == "visible") {
-            finger.style.visibility = "hidden";
-        } else {
-            finger.style.visibility = "visible";
-        }
-    }
-    setInterval("blink(container)", 500);
-
     init: function () {
         const animatedMarker = document.querySelector("#animated-marker");
         // DOM elements containing each employee
