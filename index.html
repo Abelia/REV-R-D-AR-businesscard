@@ -5,12 +5,16 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <script src="event.js"></script>
+<script src="main.css"></script>
 
-    
-  <body style='margin : 0px; overflow: hidden;'>
-      <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+
+<body style='margin : 0px; overflow: hidden;'>
+    <div id='containe' style='position: fixed; bottom: 20%; height: 1%; text-align: center; z-index: 1; margin-left: auto; margin-right: auto; width: 100vw;'>
+        <img id='tap' style='visibility: visible; width: 10%;' src="img/tap.png" />
+    </div>
+    <a-scene embedded arjs=' trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
         <a-asset>
-            <a-asset-item data-x="1" id="test1" src="3D/Marcin.gltf"></a-asset-item>
+            <a-asset-item data-x=" 1" id="test1" src="3D/Marcin.gltf"></a-asset-item>
             <a-asset-item data-x="2" id="test2" src="3D/Chaouki.gltf"></a-asset-item>
             <a-asset-item data-x="3" id="test3" src="3D/Clara.gltf"></a-asset-item>
             <a-asset-item data-x="4" id="test4" src="3D/Boris.gltf"></a-asset-item>
@@ -18,19 +22,18 @@
             <a-asset-item data-x="6" id="test6" src="3D/Vincentg.gltf"></a-asset-item>
             <a-asset-item data-x="7" id="test7" src="3D/Jonathan.gltf"></a-asset-item>
         </a-asset>
-        
-       
-      <a-marker-camera raycaster="objects:.landscape,.environmentGround,.environmentDressing; far:0.5;" markerhandler emitevents="true" cursor="fuse: false; rayOrigin: mouse" id="animated-marker" type='pattern' url="https://rawcdn.githack.com/Abelia/REV-R-D-AR-businesscard/1def08a85a24f01d45367c2673bb9857a9182ca0/marker/pattern-marker.patt">
-          <a-entity gltf-model="#test1" scale="5 5 5" rotation="0" id="animated-model"  class="employee visible" visible="true"></a-entity>
-          <a-entity gltf-model="#test2" scale="5 5 5" rotation="0" id="animated-model"  class="employee" visible="false"></a-entity>
-          <a-entity gltf-model="#test3" scale="5 5 5" rotation="0" id="animated-model"  class="employee" visible="false"></a-entity>
-          <a-entity gltf-model="#test4" scale="5 5 5" rotation="0" id="animated-model"  class="employee" visible="false"></a-entity>
-          <a-entity gltf-model="#test5" scale="5 5 5" rotation="0" id="animated-model"  class="employee" visible="false"></a-entity>
-          <a-entity gltf-model="#test6" scale="5 5 5" rotation="0" id="animated-model"  class="employee" visible="false"></a-entity>
-          <a-entity gltf-model="#test7" scale="5 5 5" rotation="0" id="animated-model"  class="employee" visible="false"></a-entity>
-      </a-marker-camera>
-      <a-entity camera ></a-entity>
-        
+
+
+        <a-marker-camera raycaster="objects:.landscape,.environmentGround,.environmentDressing; far:0.5;" markerhandler emitevents="true" cursor="fuse: false; rayOrigin: mouse" id="animated-marker" type='pattern' url="https://rawcdn.githack.com/Abelia/REV-R-D-AR-businesscard/1def08a85a24f01d45367c2673bb9857a9182ca0/marker/pattern-marker.patt">
+            <a-entity gltf-model="#test1" scale="5 5 5" rotation="0" id="animated-model" class="employee visible" visible="true"></a-entity>
+            <a-entity gltf-model="#test2" scale="5 5 5" rotation="0" id="animated-model" class="employee" visible="false"></a-entity>
+            <a-entity gltf-model="#test3" scale="5 5 5" rotation="0" id="animated-model" class="employee" visible="false"></a-entity>
+            <a-entity gltf-model="#test4" scale="5 5 5" rotation="0" id="animated-model" class="employee" visible="false"></a-entity>
+            <a-entity gltf-model="#test5" scale="5 5 5" rotation="0" id="animated-model" class="employee" visible="false"></a-entity>
+            <a-entity gltf-model="#test6" scale="5 5 5" rotation="0" id="animated-model" class="employee" visible="false"></a-entity>
+            <a-entity gltf-model="#test7" scale="5 5 5" rotation="0" id="animated-model" class="employee" visible="false"></a-entity>
+        </a-marker-camera>
+        <a-entity camera></a-entity>
+
     </a-scene>
-  </body>
-</html>
+</body></html>
