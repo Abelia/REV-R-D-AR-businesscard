@@ -7,11 +7,11 @@
 <script src="event.js"></script>
 <script src="main.css"></script>
 
+<div id='container' style="height: 0vh">
+    <img id='tap' class="blinking" src="img/tap.png" style="position: fixed; bottom: 25px; z-index: 99; width: 50px; right: 40px;" />
+</div>
 
 <body style='margin : 0px; overflow: hidden; height: 100vh;'>
-    <div id='container' style="height: 0vh">
-        <img id='tap' src="img/tap.png" style="position: fixed; bottom: 25px; z-index: 1; width: 50px; right: 40px;" />
-    </div>
     <a-scene embedded arjs=' trackingMethod: best; sourceType: webcam; debugUIEnabled: false;' vr-mode-ui="enabled: false">
         <a-asset>
             <a-asset-item data-x="1" id="test1" src="3D/Marcin.gltf"></a-asset-item>
