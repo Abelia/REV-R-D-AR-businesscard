@@ -10,11 +10,11 @@
 
 <body style='margin : 0px; overflow: hidden; height: 100vh;'>
     <div id='container' style="height: 0vh">
-        <img id='tap' src="img/tap.png" style="width: 50px; margin: 90vh 80vw 5vh 111vw;" />
+        <img id='tap' src="img/tap.png" style="position: fixed; bottom: 10px; z-index: 1; width: 50px; right: 20px;" />
     </div>
     <a-scene embedded arjs=' trackingMethod: best; sourceType: webcam; debugUIEnabled: false;' vr-mode-ui="enabled: false">
         <a-asset>
-            <a-asset-item data-x=" 1" id="test1" src="3D/Marcin.gltf"></a-asset-item>
+            <a-asset-item data-x="1" id="test1" src="3D/Marcin.gltf"></a-asset-item>
             <a-asset-item data-x="2" id="test2" src="3D/Chaouki.gltf"></a-asset-item>
             <a-asset-item data-x="3" id="test3" src="3D/Clara.gltf"></a-asset-item>
             <a-asset-item data-x="4" id="test4" src="3D/Boris.gltf"></a-asset-item>
