@@ -8,9 +8,9 @@
 <script src="main.css"></script>
 
 
-<body style='margin : 0px; overflow: hidden;'>
-    <div id='container'>
-        <img id='tap' src="img/tap.png" />
+<body style='margin : 0px; overflow: hidden; height: 100vh;'>
+    <div id='container' style="height: 0vh">
+        <img id='tap' src="img/tap.png" style="width: 50px; margin: 90vh 50vw 10vh 50vw;" />
     </div>
     <a-scene embedded arjs=' trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
         <a-asset>
@@ -22,7 +22,6 @@
             <a-asset-item data-x="6" id="test6" src="3D/Vincentg.gltf"></a-asset-item>
             <a-asset-item data-x="7" id="test7" src="3D/Jonathan.gltf"></a-asset-item>
         </a-asset>
-
 
         <a-marker-camera raycaster="objects:.landscape,.environmentGround,.environmentDressing; far:0.5;" markerhandler emitevents="true" cursor="fuse: false; rayOrigin: mouse" id="animated-marker" type='pattern' url="https://rawcdn.githack.com/Abelia/REV-R-D-AR-businesscard/1def08a85a24f01d45367c2673bb9857a9182ca0/marker/pattern-marker.patt">
             <a-entity gltf-model="#test1" scale="5 5 5" rotation="0" id="animated-model" class="employee visible" visible="true"></a-entity>
