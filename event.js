@@ -37,14 +37,14 @@ AFRAME.registerComponent('markerhandler', {
     }
 });
 
-//var blink_speed = 500; // every 1000 == 1 second, adjust to suit
-//
-//setInterval(function () {
-//    var ele = document.querySelector('.blinking');
-//    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
-//}, blink_speed);
-//
-//setTimeout(function () {
-//    var ele = document.querySelector('.blinking');
-//    ele.style.opacity = "0";
-//}, 6000);
+var blink_speed = 500; // every 1000 == 1 second, adjust to suit
+
+setInterval(function () {
+    var ele = document.querySelector('.blinking');
+    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+}, blink_speed);
+
+setTimeout(function () {
+    var ele = document.querySelector('.blinking');
+    ele.style.opacity = "0";
+}, 6000);
