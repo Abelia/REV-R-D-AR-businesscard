@@ -47,4 +47,4 @@ setInterval(function () {
 setTimeout(function () {
     var ele = document.querySelector('.blinking');
     ele.style.opacity = "0";
-}, 6000);
+}, 10000);
