@@ -50,7 +50,6 @@ setTimeout(function () {
 }, blink_end);
 
 window.addEventListener('load', function () {
-    console.log('/////////LOADING IS FINISHED//////////');
     var ele = document.querySelector('.loading');
     ele.style.visibility = 'hidden';
 })
