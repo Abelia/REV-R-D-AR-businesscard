@@ -8,9 +8,12 @@
 <script src="main.css"></script>
 
 <div id='container' style="height: 0vh">
-    <p class="loading" style='position: fixed; width:100%; text-align: center; z-index: 1; left: 0; font-family: sans-serif; color: white; font-size: 3vh;'>Loading...</p>
     <img id='tap' class="blinking" src="img/tap.png" style="position: fixed; bottom: 25px; z-index: 99; width: 70px; right: 30px;" />
+    <div class="loading" style='style=width: 100%;height: 100vh;text-align: center;z-index: 1;left: 0px;font-family: sans-serif;color: white;font-size: 3vh;background-color: #FF504B; display: flex;align-items: center;justify-content: center;'>
+        <span>Loading...</span>
+    </div>
 </div>
+
 
 <body style='margin : 0px; overflow: hidden; height: 100vh;'>
     <a-scene embedded arjs=' trackingMethod: best; sourceType: webcam; debugUIEnabled: false;' vr-mode-ui="enabled: false">
@@ -42,6 +45,4 @@
         <a-entity camera></a-entity>
 
     </a-scene>
-</body>
-
-</html>
+</body></html>

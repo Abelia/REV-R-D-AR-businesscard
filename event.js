@@ -50,6 +50,8 @@ setTimeout(function () {
 }, blink_end);
 
 window.addEventListener('load', function () {
+    console.log("//////////EVERYTHING HAS LOADED////////////////")
     var ele = document.querySelector('.loading');
     ele.style.visibility = 'hidden';
+    ele.style.height = '0vh';
 })
