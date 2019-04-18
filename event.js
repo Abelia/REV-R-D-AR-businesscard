@@ -4,9 +4,10 @@ AFRAME.registerComponent('markerhandler', {
         const animatedMarker = document.querySelector("#animated-marker");
         // DOM elements containing each employee
         const employees = document.querySelectorAll(".employee");
+        var tap = document.querySelector("#container");
 
         // every click, we make we change the visible model
-        document.addEventListener('touchstart', function (ev, target) {
+        window.addEventListener('touchstart', function (ev, target) {
 
             // KNOWN ISSUE on AFRAME/AR.js -> events get fired 2 times if clicked on animated-marker, so we have to check if clicked element is canvas to only handle these events.
             if (!ev.target.classList.contains('a-canvas')) return;
@@ -34,21 +35,23 @@ AFRAME.registerComponent('markerhandler', {
             nextItem.classList.add('visible');
             nextItem.setAttribute('visible', true);
         });
+
     }
 });
 
-var blink_speed = 500; // every 1000 == 1 second, adjust to suit
-var blink_end = 10000;
-setInterval(function () {
-    var ele = document.querySelector('.blinking');
-    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
-}, blink_speed);
-
-setTimeout(function () {
-    var ele = document.querySelector('.blinking');
-    ele.style.opacity = '0';
-}, blink_end);
-
+//var blink_speed = 500; // every 1000 == 1 second, adjust to suit
+//var blink_end = 10000;
+//
+//setInterval(function () {
+//    var ele = document.querySelector('.blinking');
+//    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+//}, blink_speed);
+//
+//setTimeout(function () {
+//    var ele = document.querySelector('.blinking');
+//    ele.style.opacity = '0';
+//}, blink_end);
+//
 window.addEventListener('load', function () {
     console.log("//////////EVERYTHING HAS LOADED////////////////")
     var ele = document.querySelector('.loading');
