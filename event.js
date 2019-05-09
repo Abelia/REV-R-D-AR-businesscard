@@ -39,19 +39,7 @@ AFRAME.registerComponent('markerhandler', {
     }
 });
 
-//var blink_speed = 500; // every 1000 == 1 second, adjust to suit
-//var blink_end = 10000;
-//
-//setInterval(function () {
-//    var ele = document.querySelector('.blinking');
-//    ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
-//}, blink_speed);
-//
-//setTimeout(function () {
-//    var ele = document.querySelector('.blinking');
-//    ele.style.opacity = '0';
-//}, blink_end);
-//
+
 window.addEventListener('load', function () {
     console.log("//////////EVERYTHING HAS LOADED////////////////")
     var ele = document.querySelector('.loading');
